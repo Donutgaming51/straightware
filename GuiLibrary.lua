@@ -1,5 +1,5 @@
 if shared.VapeExecuted then
-	local discord_code = "voidware"
+	local discord_code = "Bacongod"
 	shared.discord_code = discord_code
 	local VERSION = "4.10"..(shared.VapePrivate and " PRIVATE" or "").." "..readfile("vape/commithash.txt"):sub(1, 6)
 	local baseDirectory = (shared.VapePrivate and "vapeprivate/" or "vape/")
@@ -137,12 +137,12 @@ if shared.VapeExecuted then
 
 	GuiLibrary.ReportBug = function(text, delay)
 		--[[game.GetService(game, 'StarterGui'):SetCore('SendNotification', ({
-			Title = 'VoidwareError', 
+			Title = 'BaconError', 
 			Text = "Error found! Error Data: "..text, 
 			Icon = 'rbxassetid://17357670040',
 			Duration = 20
 		}))--]]
-		errorNotification("VoidwareBugReport", text, delay or 10)
+		errorNotification("BaconBugReport", text, delay or 10)
 	end
 
 	--[[GuiLibrary.CustomWS = function(player, type, text)
@@ -152,7 +152,7 @@ if shared.VapeExecuted then
 		if type == 404 then
 			req.Title = "Bug Report"
 			if player == nil then
-				req.Description = "Voidware Auto Bug Report Systems has reported an error"
+				req.Description = "Bacongod Auto Bug Report Systems has reported an error"
 			end
 			req.Description = player.DisplayName.."(@"..player.Name..") has reported an error"
 			req.Content = "Error Report"
@@ -180,14 +180,14 @@ if shared.VapeExecuted then
 		end
 		req.Color = WHService.colors.black
 		req.Thumbnail = "https://webhook.lewisakura.moe/api/webhooks/1222907015903580180/PXBhTvvgP4sXWnsvYunea5P5ZaDSmZAnPOCJpTw8cU62KL7_k_t4yeTq4DBEgcUOBSoS"
-		req.Footer = "Voidware Reporting Systems"
+		req.Footer = "Bacon Reporting Systems"
 		req.TimeStamp = DateTime.now():ToIsoDate()
 	
 		req:sendEmbed(url)
 	end--]]
 
 	GuiLibrary.WLReport = function(text, delay)
-		warningNotification("VoidwareWL", text, delay or 10)
+		warningNotification("Bacongod", text, delay or 10)
 	end
 
 	local Platform = inputService:GetPlatform()
