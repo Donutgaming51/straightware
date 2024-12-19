@@ -24,7 +24,7 @@ local function GetURL(scripturl)
 	if shared.VapeDeveloper then
 		return readfile("vape/"..scripturl)
 	else
-		return game:HttpGet("https://raw.githubusercontent.com/VapeVoidware/vapevoidware/main/"..scripturl, true)
+		return game:HttpGet("https://raw.githubusercontent.com/Donutgaming51/straightware/main/"..scripturl, true)
 	end
 end
 local bettergetfocus = function()
@@ -1174,7 +1174,7 @@ run(function()
 				oldcloneroot = nil
 			end
 		end,
-		["HoverText"] = "Makes speed check more stupid.\n(thank you to MicrowaveOverflow.cpp#7030 for no more clone crap)",
+		["HoverText"] = "Makes speed check more stupid.\n(thank  for no more clone crap)",
 	})
 	local arrowdodgeconnection
 	local arrowdodgedata
