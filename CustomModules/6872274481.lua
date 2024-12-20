@@ -7754,7 +7754,7 @@ run(function()
 				return v, i
 			end
 		end
-		for i,v in next, (AutoToxicPhrases5.ObjectList) do 
+		for i,v in next, (AutoPhrases5.ObjectList) do 
 			if checkstr:find(v) then 
 				return 'Bullying', v
 			end
@@ -7768,13 +7768,13 @@ run(function()
 			if calling then 
 				table.insert(AutoToxic.Connections, vapeEvents.BedwarsBedBreak.Event:Connect(function(bedTable)
 					if AutoToxicBedDestroyed.Enabled and bedTable.brokenBedTeam.id == lplr:GetAttribute('Team') then
-						local custommsg = #AutoToxicPhrases6.ObjectList > 0 and AutoToxicPhrases6.ObjectList[math.random(1, #AutoToxicPhrases6.ObjectList)] or 'Who needs a bed when you got Voidware <name>? | .gg/voidware'
+						local custommsg = #AutoToxicPhrases6.ObjectList > 0 and AutoToxicPhrases6.ObjectList[math.random(1, #AutoToxicPhrases6.ObjectList)] or 'Who needs a bed when you got BACONGODS EHEH <name>? | .gg/UZhzwu8k8e'
 						if custommsg then
 							custommsg = custommsg:gsub('<name>', (bedTable.player.DisplayName or bedTable.player.Name))
 						end
 						textChatService.ChatInputBarConfiguration.TargetTextChannel:SendAsync(custommsg)
 					elseif AutoToxicBedBreak.Enabled and bedTable.player.UserId == lplr.UserId then
-						local custommsg = #AutoToxicPhrases7.ObjectList > 0 and AutoToxicPhrases7.ObjectList[math.random(1, #AutoToxicPhrases7.ObjectList)] or 'Your bed has been sent to the abyss <teamname>! | .gg/voidware'
+						local custommsg = #AutoToxicPhrases7.ObjectList > 0 and AutoToxicPhrases7.ObjectList[math.random(1, #AutoToxicPhrases7.ObjectList)] or 'Your bed has been sent to the abyss <teamname>! | .gg/UZhzwu8k8e'
 						if custommsg then
 							local team = bedwars.QueueMeta[store.queueType].teams[tonumber(bedTable.brokenBedTeam.id)]
 							local teamname = team and team.displayName:lower() or 'white'
@@ -7791,7 +7791,7 @@ run(function()
 						if killed == lplr then 
 							if (not leavesaid) and killer ~= lplr and AutoToxicDeath.Enabled then
 								leavesaid = true
-								local custommsg = #AutoToxicPhrases3.ObjectList > 0 and AutoToxicPhrases3.ObjectList[math.random(1, #AutoToxicPhrases3.ObjectList)] or 'I was too laggy <name>. That\'s why you won. | .gg/voidware'
+								local custommsg = #AutoToxicPhrases3.ObjectList > 0 and AutoToxicPhrases3.ObjectList[math.random(1, #AutoToxicPhrases3.ObjectList)] or 'I was too laggy <name>. That\'s why you won. | .gg/UZhzwu8k8e'
 								if custommsg then
 									custommsg = custommsg:gsub('<name>', (killer.DisplayName or killer.Name))
 								end
@@ -7799,9 +7799,9 @@ run(function()
 							end
 						else
 							if killer == lplr and AutoToxicFinalKill.Enabled then 
-								local custommsg = #AutoToxicPhrases2.ObjectList > 0 and AutoToxicPhrases2.ObjectList[math.random(1, #AutoToxicPhrases2.ObjectList)] or '<name> things could have ended for you so differently, if you\'ve used Voidware. | .gg/voidware'
+								local custommsg = #AutoToxicPhrases2.ObjectList > 0 and AutoToxicPhrases2.ObjectList[math.random(1, #AutoToxicPhrases2.ObjectList)] or '<name> things could have ended for you so differently, if you\'ve used BaconGODS, JK YOU CANT ITS ONLY JXK OWN. | .gg/UZhzwu8k8e'
 								if custommsg == lastsaid then
-									custommsg = #AutoToxicPhrases2.ObjectList > 0 and AutoToxicPhrases2.ObjectList[math.random(1, #AutoToxicPhrases2.ObjectList)] or '<name> things could have ended for you so differently, if you\'ve used Voidware. | .gg/voidware'
+									custommsg = #AutoToxicPhrases2.ObjectList > 0 and AutoToxicPhrases2.ObjectList[math.random(1, #AutoToxicPhrases2.ObjectList)] or '<name> things could have ended for you so differently, if you\'ve used BaconGODS, JK YOU CANT ITS ONLY JXK OWN. | .gg/UZhzwu8k8e'
 								else
 									lastsaid = custommsg
 								end
@@ -7820,7 +7820,7 @@ run(function()
 							sendmessage('gg')
 						end
 						if AutoToxicWin.Enabled then
-							sendmessage(#AutoToxicPhrases.ObjectList > 0 and AutoToxicPhrases.ObjectList[math.random(1, #AutoToxicPhrases.ObjectList)] or 'Voidware is simply better everyone. | .gg/voidware')
+							sendmessage(#AutoToxicPhrases.ObjectList > 0 and AutoToxicPhrases.ObjectList[math.random(1, #AutoToxicPhrases.ObjectList)] or 'BACONGODS is simply better everyone. | .gg/UZhzwu8k8e')
 						end
 					end
 				end))
@@ -7835,7 +7835,7 @@ run(function()
 								if custommsg then
 									custommsg = custommsg:gsub('<name>', (plr.DisplayName or plr.Name))
 								end
-								local msg = (custommsg or getrandomvalue(rendermessages[1]):gsub('<name>', plr.DisplayName)..' | .gg/voidware')
+								local msg = (custommsg or getrandomvalue(rendermessages[1]):gsub('<name>', plr.DisplayName)..' | BACONGODS on top')
 								sendmessage(msg)
 							end
 						end
